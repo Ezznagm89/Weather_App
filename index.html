@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="./CSS/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./Images/logo@2x.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Live Cameras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="app-container">
+      <div class="container px-3 py-5 text-center">
+        <div class="search-input-container">
+            <input type="email" class="footer-input" placeholder="Find Your Location..." />
+            <button class="footer-btn btn btn-primary px-4">Find</button>
+          </div>
+      </div>
+      <div class="weather-container">
+        <!-- Today Section -->
+        <div class="item">
+          <div class="forecast-header">
+            <p id="today_date_day_name">Sunday</p>
+          </div>
+          <div class="item-content">
+            <p id="today_location">Cairo</p>
+            <p class="temp"><span id="today_temp">20</span><sup>o</sup>C</p>
+            <p id="today_condition">Clear Sky</p>
+            <div class="wind-info">
+              <img src="images/icon-wind.png" alt="Wind icon" />
+              <p id="today_wind">30 km/h</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Day Section -->
+        <div class="item">
+          <div class="forecast-header">
+            <p id="next_day_name">Monday</p>
+          </div>
+          <div class="item-content">
+            <p class="temp"><span id="next_day_temp">25</span><sup>o</sup>C</p>
+            <p id="next_day_condition">Partly Cloudy</p>
+            <div class="wind-info">
+              <img src="images/icon-wind.png" alt="Wind icon" />
+              <p id="next_day_wind">15 km/h</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Day After Section -->
+        <div class="item">
+          <div class="forecast-header">
+            <p id="day_after_name">Tuesday</p>
+          </div>
+          <div class="item-content">
+            <p class="temp"><span id="day_after_temp">22</span><sup>o</sup>C</p>
+            <p id="day_after_condition">Sunny</p>
+            <div class="wind-info">
+              <img src="images/icon-wind.png" alt="Wind icon" />
+              <p id="day_after_wind">10 km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-input-container">
+          <input type="email" class="footer-input" placeholder="Enter your email to subscribe..." />
+          <button class="footer-btn btn btn-primary">Subscribe</button>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <p class="text-center mt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </footer>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
